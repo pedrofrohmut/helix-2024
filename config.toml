@@ -18,7 +18,13 @@ C-j = "jump_view_down"
 C-k = "jump_view_up"
 C-l = "jump_view_right"
 
+C-e = "scroll_down"
+C-y = "scroll_up"
+
 C-q = "file_picker_in_current_directory"
+
+S-h = "goto_first_nonwhitespace"
+S-l = "goto_line_end"
 
 #S-c = ["select_mode", "goto_line_end", "change_selection"]
 
