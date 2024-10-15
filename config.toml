@@ -1,0 +1,26 @@
+theme = "my-ayu-mirage"
+
+[editor]
+line-number = "relative"
+scrolloff = 2
+cursorline = true
+rulers = [80, 120]
+true-color = true 
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.normal]
+C-h = "jump_view_left"
+C-j = "jump_view_down"
+C-k = "jump_view_up"
+C-l = "jump_view_right"
+
+C-q = "file_picker_in_current_directory"
+
+#S-c = ["select_mode", "goto_line_end", "change_selection"]
+
+[keys.insert]
+C-l = "delete_char_forward"

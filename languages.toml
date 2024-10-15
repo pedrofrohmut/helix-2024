@@ -1,0 +1,14 @@
+[language-server]
+jdtls = { command = "/home/pedro/.local/share/nvim/mason/packages/jdtls/jdtls" }
+language-server = { command = "/home/pedro/.local/share/nvim/mason/packages/jdtls/jdtls", args = [
+  "-data", "/home/pedro/.cache/jdtls/workspace"
+  ]}
+
+[[language]]
+name = "java"
+scope = "source.java"
+injection-regex = "java"
+file-types = ["java"]
+roots = ["pom.xml", "build.gradle", ]
+indent = { tab-width = 4, unit = "    " }
+language-servers = [ "jdtls" ]
