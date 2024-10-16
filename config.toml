@@ -1,4 +1,4 @@
-theme = "my-ayu-mirage"
+theme = "my-sonokai"
 
 [editor]
 line-number = "relative"
@@ -23,6 +23,10 @@ C-y = "scroll_up"
 
 C-q = "file_picker_in_current_directory"
 
+S-h = "goto_first_nonwhitespace"
+S-l = "goto_line_end"
+
+[keys.select]
 S-h = "goto_first_nonwhitespace"
 S-l = "goto_line_end"
 
