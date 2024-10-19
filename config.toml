@@ -18,8 +18,10 @@ C-j = "jump_view_down"
 C-k = "jump_view_up"
 C-l = "jump_view_right"
 
-C-e = "scroll_down"
-C-y = "scroll_up"
+C-e = ["scroll_down", "scroll_down", "scroll_down"]
+C-y = ["scroll_up", "scroll_up", "scroll_up"]
+
+"ret" = ["insert_mode", "insert_newline", "normal_mode"]
 
 C-q = "file_picker_in_current_directory"
 
