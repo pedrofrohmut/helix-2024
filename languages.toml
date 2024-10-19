@@ -1,14 +1,21 @@
 [language-server]
 jdtls = { command = "/home/pedro/.local/share/nvim/mason/packages/jdtls/jdtls" }
-language-server = { command = "/home/pedro/.local/share/nvim/mason/packages/jdtls/jdtls", args = [
-  "-data", "/home/pedro/.cache/jdtls/workspace"
-  ]}
+# language-server = { command = "/home/pedro/.local/share/nvim/mason/packages/jdtls/jdtls", args = [
+#   "-data", "/home/pedro/.cache/jdtls/workspace"
+#   ]}
+typescript-language-server = { command = "/home/pedro/.local/share/nvim/mason/packages/typescript-language-server/node_modules/.bin/typescript-language-server" }
 
 [[language]]
 name = "java"
 scope = "source.java"
 injection-regex = "java"
 file-types = ["java"]
-roots = ["pom.xml", "build.gradle", ]
+roots = ["pom.xml", "build.gradle"]
 indent = { tab-width = 4, unit = "    " }
 language-servers = [ "jdtls" ]
+
+[[language]]
+name = "typescript"
+language-servers = [ "typescript-language-server" ] 
+indent = { tab-width = 4, unit = "    " }
+roots = ["package.json"]
