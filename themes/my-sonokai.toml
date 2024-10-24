@@ -1,10 +1,9 @@
 inherits = "sonokai"
+
 "ui.background" = {}
 "ui.selection" = { bg = "#383866" }
 "ui.selection.primary" = { bg = "#4444aa" }
-# "ui.selection" = { bg = "#666622" }
-# "ui.selection.primary" = { bg = "#444422" }
-
+"ui.cursor" = { bg = "#ffff00", fg = "#222222" }
 
 ### Sublime Text Sonokai Theme
 ## Original Author: sainnhe
